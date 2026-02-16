@@ -13,7 +13,7 @@ export default function MarketplaceHome() {
       <Text style={styles.title}>Scopri i migliori organizzatori per il tuo evento</Text>
       <VendorCard
         name="Team Loris Animazione"
-        image={require('../assets/images/vendor-teamloris.jpg')}
+        image={require('../assets/images/vendor-teamloris.jpg').default || require('../assets/images/react-logo.png')}
         rating={4.9}
         description="Animazione, feste e magia per bambini. Esperienza premium."
         badge="Top Partner"
