@@ -1,12 +1,4 @@
-// Entry point principale per EVE
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import MainNavigator from '../ux/MainNavigator';
-
+// Entry point Expo Router (non serve più NavigationContainer né MainNavigator)
 export default function App() {
-  return (
-    <NavigationContainer>
-      <MainNavigator />
-    </NavigationContainer>
-  );
+  return null;
 }
