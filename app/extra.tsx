@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { palette, typography } from '../design-system/palette';
 
 export default function ExtraScreen() {

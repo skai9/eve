@@ -1,10 +1,15 @@
-# EVE – Glovo for Events
+# EVE Marketplace – Vertical Event Platform
 
-EVE è l’app mobile intelligente per prenotare eventi, feste e animazione. Mobile-first, moderna, premium.
+EVE è una piattaforma marketplace verticale per organizzatori di eventi. Non è un brand di location, ma un sistema neutrale e scalabile.
 
 ## Struttura repository
 - `/app` – Entry point e navigazione app (Expo Router)
-- `/components` – Componenti UI riutilizzabili
+- `/marketplace` – Logica e pagine home marketplace
+- `/vendors` – Flussi e pagine partner (es. Team Loris)
+- `/booking` – Flussi di prenotazione, configuratori extra
+- `/components/marketplace` – Componenti marketplace
+- `/components/vendor` – Componenti vendor
+- `/components/booking` – Componenti booking
 - `/design-system` – Palette, tipografia, tokens, temi
 - `/motion` – Motion system, animazioni
 - `/strategies` – Strategie di upsell, logica suggerimenti
@@ -16,9 +21,13 @@ EVE è l’app mobile intelligente per prenotare eventi, feste e animazione. Mob
 
 ---
 
-La UX EVE è integrata nel flow Expo Router:
-1. Home: headline emozionale, CTA "Inizia"
-2. Scelta tipo evento: Sala EVE / Location esterna
-3. Step sala/location/extra
+## Architettura Marketplace
+- Splash animato EVE
+- Home: lista vendor (es. Team Loris)
+- VendorPage: branding e flow partner
+- BookingFlow: scelta sala/location, suggerimenti, extra
+- StickySummaryBar: totale sempre visibile
 
-Pronta per deploy web/mobile.
+Struttura pronta per aggiungere nuovi partner, filtri, ranking, recensioni.
+
+Per dettagli su UX, flow e design, consulta le cartelle dedicate e `docs/MARKETPLACE_ARCHITECTURE.md`.
